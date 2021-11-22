@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <body>
+    <header>
+        <img id="ham" src="images/icon-menu.svg" alt="">
+        <nav >
+            <div class="logo">sneakers</div>
+            <div class="nav-bar">
+
+                <ul id="show-ul">
+                    <a href="#">
+                        <li>Collections</li>
+                    </a>
+                    <a href="#">
+                        <li>Man</li>
+                    </a>
+                    <a href="#">
+                        <li>Woman</li>
+                    </a>
+                    <a href="#">
+                        <li>About</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="imgs"><img src="images/icon-cart.svg" class="cart" id="cart" alt=""><span id="quant">0</span>
+            <img src="images/image-avatar.png" id='avatar' alt="">
+        </div>
+    </header>
+    <div id="gallery" class="hide">
+
+
+        <div class="slideshow-container">
+            <span id="close" class="close cursor">&times;</span>
+
+    
+            <div class="mySlides fade">
+              <img src="images/image-product-1.jpg" class="mob" >
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="images/image-product-2.jpg" class="mob" >
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="images/image-product-3.jpg" class="mob" >
+            </div>
+            <div class="mySlides fade">
+                <img src="images/image-product-4.jpg" class="mob" >
+              </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          
+      
+    </div>    
+<section class="cart-card"  id='cart-card'>
+    <h5>cart</h5>
+    
+    <div style="margin: 0 auto; padding-bottom: 30%;">
+        Your cart is empty
+    </div>
+   <!-- <div class="cart-desc">
+        <div class="product-desc"> 
+            <img src="/images/image-product-1-thumbnail.jpg" alt="">
+
+            <div class="product-price">             <p>Fall Limited Edition Sneakers</p>
+
+                125*3= <span id="totalPrice">375</span></div>
+            <div id="delete"><img src="/images/icon-delete.svg" alt=""></div>
+
+        </div>
+
+    </div>
+    <div class="sumbit">Sumbit</div>-->
+</section>
+
+    <main>
+  
+
+
+
+
+
+<div class="galery">
+
+            <div class="active">
+                <img class="active-img"  src="images/image-product-1.jpg"  id="active-img" alt="">
+            </div>
+            <div class="tumblr">
+                <img src="images/image-product-1-thumbnail.jpg"   id="pic1" alt="">
+                <img src="images/image-product-2-thumbnail.jpg" id="pic2" alt="">
+                <img src="images/image-product-3-thumbnail.jpg" id="pic3" alt="">
+                <img src="images/image-product-4-thumbnail.jpg" id="pic4" alt="">
+
+
+            </div>
+
+
+
+        </div>
+        <div class="description" >
+            <h6> Sneaker Company</h6>
+            <h3> Fall Limited Edition Sneakers
+            </h3>
+            <div id="desc-text" >
+                These low-profile sneakers are your perfect casual wear companion. Featuring a
+                durable rubber outer sole, they’ll withstand everything the weather can offer.</div>
+
+            <div class="price">
+                <div class="current-price"> $125.00</div>
+                <div class="discount">-50%</div>
+
+            </div>
+            <div class="really-price">$250.00</div>
+
+
+            <div class="shop">
+<div class="count">
+   <img src="images/icon-minus.svg"  id="minus" alt=""><span id="itemNumber">0</span><img id="plus" src="images/icon-plus.svg" alt="">
+</div>
+<div class="add-to-cart" id="addToCart"><img src="images/icon-cart.svg" id="sumbit-cart" alt=""><span>Add to cart</span></div>
+
+
+            </div>
+
+
+        </div>
+
+    </main>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+<script src="script.js"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,540 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#ham{
+    display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&display=swap');
+body {
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    height: 6rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    width: 100%;
+    text-decoration: none;
+    padding-right: 10%;
+    color: gray;
+    padding-top: 5%;
+    height: 6rem;
+    padding-top: 18%;
+}
+
+nav a:hover {
+    border-bottom: solid 3px orange;
+}
+
+nav li {
+    list-style: none;
+}
+#quant{
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-weight: bolder;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Abril Fatface', cursive;
+}
+
+#avatar {
+    width: 40%;
+    height: 40%;
+}
+
+#avatar:hover {
+    border: 1px solid red;
+    border-radius: 50%;
+    width: 36%;
+    height: 36%;
+}
+
+.imgs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart {
+    width: 15%;
+    height: 15%;
+    cursor: pointer;
+}
+
+
+
+
+main {
+    width: 100%;
+    display: flex;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-between;
+}
+
+.galery {
+    width: 50%;
+}
+
+.active {
+    padding-bottom: 5%;
+}
+
+.active-img {
+    width: 100%;
+    cursor: pointer;
+}
+
+img {
+    border-radius: 8%;
+}
+
+.tumblr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tumblr img {
+    border-radius: 8%;
+    width: 23%;
+    height: 23%;
+}
+
+.tumblr img:hover {
+    border: 1px red solid;
+    opacity: .5;
+}
+
+.description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+}
+h6 {
+    color: orange;
+    padding-bottom: 3%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: xx-large;
+    padding-bottom: 5%;
+}
+
+.desc-text {
+    color: rgb(158, 158, 158);
+    padding-bottom: 5%;
+}
+
+.price {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.discount {
+    background-color: rgb(248, 212, 145);
+    border-radius: 20%;
+    color: orange;
+    font-size: 15px;
+    height: 70%;
+}
+
+.really-price {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.shop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.count {
+    width: 25%;
+    height: 2rem;
+    background-color: rgb(243, 242, 242);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5%;
+    margin-top: 2%;
+}
+
+#minus:hover {
+    cursor: pointer;
+}
+
+#plus:hover {
+    cursor: pointer;
+}
+
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    width: 50%;
+    align-items: center;
+    background-color: rgb(255, 136, 0);
+    color: white;
+    font-weight: bolder;
+    border-radius: 5%;
+    box-shadow: 4px 10px 15px -6px #000000;
+    fill: white;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    opacity: 0.6;
+}
+
+.cart-card {
+    width: 30%;
+    height: 33%;
+   display: none;
+    flex-direction: column;
+    -webkit-box-shadow: 1px 3px 15px -1px #b4b2b2; 
+    box-shadow: 1px 3px 15px -1px #9c9c9c;
+    border-radius: 5%;
+justify-content: space-between;
+
+position: fixed;
+right: 15%;
+top: 8%;
+z-index: 1;
+content: "";
+
+}
+.carousel-container {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+  
+  }
+  .navigation .prev {
+    position: absolute;
+    z-index: 10;
+    font-size: 25px;
+    top: 60%;
+    left: 10px;
+    font-weight: 700;
+  }
+  .navigation .next {
+    right: 10px;
+    position: absolute;
+    font-size: 25px;
+    z-index: 10;
+    top: 60%;
+  }
+  .navigation .nav-btn {
+    background: rgba(255, 255, 255, 0.55);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  }
+  .navigation .nav-btn:hover {
+    background: white;
+  }
+  
+  .carousel {
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  
+  }
+  .carousel img {
+    width: 100%;
+    transition: all 0.3s ease;
+    border:8px solid white;
+  }
+  
+  .item {
+    position: absolute;
+    display: none;
+  }
+  
+  .main {
+    display: block;
+  }
+.show{
+display: flex;
+}
+
+h5 {
+    height: 3rem;
+    font-size: 25px;
+    padding-left: 5%;
+    border-bottom: 1px solid rgb(95, 90, 90);
+}
+.product-desc{
+    padding-left: 5%;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    color: gray;
+}
+.product-desc img{
+    padding-right: 5%;
+    width: 28%;
+    height: 28%;
+}
+#delete{
+    padding-top: 10%;
+    width: 20%;
+    height: 20%;
+    cursor: pointer;
+}
+.product-desc .product-price{
+    padding-top: 3%;
+}
+.sumbit{
+    margin: 0 auto;
+    width: 80%;
+    background-color: orange;
+    padding-bottom: 3%;
+    margin-bottom: 3%;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    
+}
+
+  
+
+/* Slideshow container */
+.slideshow-container {
+    margin: auto;
+    padding-left: 30%;
+    padding-top: 7%;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .close {
+    color: white;
+  
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  
+  .next {
+
+left: 62%;    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+ 
+  
+ 
+.hide{
+display: none;  }
+
+  .active-slide{
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.mob{
+    width: 50%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body{
+        padding: 0;
+        margin: 0;
+    }
+   header{
+       display: flex;
+   }
+.galery{display: none;}
+.slideshow-container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#close{
+    display: none;
+}
+.hide{
+ 
+    display: block;
+width: 100%;
+padding: 0;
+margin: 0;}
+
+.mob{width: 98%;
+height: 100%;
+margin: 0;
+padding: 0;
+border-radius: 0;}
+
+.prev, .next {
+    top: 38%;
+    width: auto;
+   font-size: 10px;
+    border-radius: 50%;
+    background-color: rgba(219, 213, 202, 0.5);
+    
+  }
+  .prev:hover, .next:hover {
+    background-color: none;
+  }
+  .next{
+      left: 87%;
+  }
+    main{
+        padding: 0;
+    }
+
+    
+    .active-slide{
+        width: 98%;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+       
+    }
+    .description{
+        width: 98%;
+    }
+    .shop{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        padding-right: 5%;
+height: 7rem;    }
+    .count{
+        width: 100%;
+    }
+    .add-to-cart{
+        width: 100%;
+    }
+    .price{
+        width: 45%;
+        display: flex;
+    }
+    nav {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 10%;
+        font-size: 20px;
+        font-weight: bolder;
+        color: black;
+        background-color: white;
+        height: 130vh;
+        width: 50%;
+        z-index: 1;
+    }
+    
+   
+  
+    
+    #ham{
+        width: 25px;
+        height: 25px;
+        display: block;
+    }
+    .cart-card{
+        width: 70%;
+        padding-top: 5px;
+        position: absolute;
+        background-color: white;
+
+    }
+    #avatar{
+        width: 50px;
+padding-right: 10px;    }
+#avatar:hover {
+    border:none;
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+}
+  }
